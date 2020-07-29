@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo" />
+        <module name="pa-api-center" />
+        <module name="pa-common-center" />
+        <module name="pa-eureka-center" />
+        <module name="pa-eureka-center02" />
+        <module name="pa-eureka-center03" />
+        <module name="pa-sysmanage-center" />
+        <module name="sa-sysmanage-ctrl" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common" target="1.8" />
+      <module name="pa-eureka-center01" target="1.8" />
+      <module name="pa-sys-cente" target="1.5" />
+      <module name="pa-sys-center" target="1.5" />
+      <module name="sa-sys-ctrl" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

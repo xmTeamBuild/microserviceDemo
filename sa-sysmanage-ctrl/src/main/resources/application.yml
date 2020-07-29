@@ -1,0 +1,12 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /sysmanage
+
+eureka:
+  client: #客户端注册进eureka服务列表内
+    service-url:
+      #defaultZone: http://localhost:7001/eureka/
+      defaultZone: http://eureka.com:7001/eureka/,http://eureka02.com:7002/eureka/,http://eureka03.com:7003/eureka/
+    register-with-eureka: false
+

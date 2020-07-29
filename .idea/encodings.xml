@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pa-api-center" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pa-common-center" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pa-eureka-center" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pa-eureka-center02" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pa-eureka-center03" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pa-sysmanage-center" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sa-sysmanage-ctrl" charset="UTF-8" />
+  </component>
+</project>
