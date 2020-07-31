@@ -74,7 +74,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <imageName>eurekaDemo</imageName>
+                    <imageName>eurekademo</imageName>
                     <dockerHost>${docker.host}</dockerHost>
                     <baseImage>java:8</baseImage>
                     <entryPoint>["java", "-jar", "-Dspring.profiles.active=prod","/${project.build.finalName}.jar"]</entryPoint>
