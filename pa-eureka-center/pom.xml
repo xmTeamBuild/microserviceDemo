@@ -63,7 +63,7 @@
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
-                <version>0.4.13</version>
+                <version>0.4.3</version>
                 <executions>
                     <execution>
                         <id>build-image</id>
@@ -74,7 +74,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <imageName>eurekademo</imageName>
+                    <imageName>${project.artifactId}:${project.version}</imageName>
                     <dockerHost>${docker.host}</dockerHost>
                     <baseImage>java:8</baseImage>
                     <entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>
