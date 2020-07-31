@@ -74,7 +74,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <imageName>center/${project.artifactId}:${project.version}</imageName>
+                    <imageName>var/jenkins_home/workspace/pa-eureka-center/pa-eureka-center/target/docker/${project.artifactId}:${project.version}</imageName>
                     <dockerHost>${docker.host}</dockerHost>
                     <baseImage>java:8</baseImage>
                     <entryPoint>["java", "-jar", "-Dspring.profiles.active=prod","/${project.build.finalName}.jar"]</entryPoint>
