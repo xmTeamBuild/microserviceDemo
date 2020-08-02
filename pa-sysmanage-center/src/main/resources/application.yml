@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8002
   servlet:
     context-path: /team
 spring:
@@ -80,8 +80,8 @@ mybatis-plus:
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url:
-      #defaultZone: http://localhost:7001/eureka/
-      defaultZone: http://eureka.com:7001/eureka/,http://eureka02.com:7002/eureka/,http://eureka03.com:7003/eureka/
+      defaultZone: http://121.196.18.208:8001/eureka/
+#      defaultZone: http://eureka.com:7001/eureka/,http://eureka02.com:7002/eureka/,http://eureka03.com:7003/eureka/
   instance:
     instance-id: sysmanage8001
     prefer-ip-address: true #访问路径可以显示IP地址，此处为放在eureka中status上时显示ip
