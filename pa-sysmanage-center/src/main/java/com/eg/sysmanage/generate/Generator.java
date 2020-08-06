@@ -36,7 +36,7 @@ public class Generator {
         GlobalConfig gc = new GlobalConfig();
 //        String projectPath = System.getProperty("user.dir");
         gc.setFileOverride(true);
-        gc.setOutputDir("F:\\microservicecloud\\pa-sysmanage-center\\src\\main\\java");
+        gc.setOutputDir("F:\\microservicespace\\microserviceDemo\\pa-sysmanage-center\\src\\main\\java");
         gc.setAuthor("shenzq");
         gc.setOpen(false);
         // gc.setSwagger2(true); 实体属性 Swagger2 注解
@@ -132,7 +132,7 @@ public class Generator {
                 .setEntityLombokModel(true)
                 .setRestControllerStyle(true)
                 // 生成的表, 支持多表一起生成，以数组形式填写
-                .setInclude("staff")
+                .setInclude("gn_menu")
                 .setControllerMappingHyphenStyle(true)
                 .setTablePrefix(pkConfig.getModuleName() + "_");
 
