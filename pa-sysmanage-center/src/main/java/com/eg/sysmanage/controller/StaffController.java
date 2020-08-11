@@ -3,6 +3,7 @@ package com.eg.sysmanage.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.eg.api.domain.Response;
+import com.eg.api.request.QueryStaffRequest;
 import com.eg.common.constants.Constants;
 import com.eg.sysmanage.model.Staff;
 import com.eg.sysmanage.service.IStaffService;
@@ -40,15 +41,17 @@ public class StaffController {
     private DiscoveryClient client;
 
     @PostMapping(value = "/login")
-    public Response login(HttpServletResponse rep, HttpServletRequest req, @RequestBody Staff staff, Principal principal) {
+    public Response login(HttpServletResponse rep, HttpServletRequest req, @RequestBody QueryStaffRequest request, Principal principal) {
         Response response = new Response(false, Constants.BUSI_FAILURE_CODE,Constants.BUSI_FAILURE_MESSAGE);
         QueryWrapper<Staff> wrapper = new QueryWrapper<Staff>();
+        wrapper.eq("staff_Name",request.getStaffName());
         Staff staff1 = iStaffService.getOne(wrapper);
         if(staff1 != null){
             // 如果存在员工信息，则登录成功
             String token = "123";
             Map<String, String> tokenMap = new HashMap<>();
             tokenMap.put("token", token);
+            tokenMap.put("staffName",request.getStaffName());
             response.setSuccess(true);
             response.setResultCode(Constants.BUSI_SUCCESS_CODE);
             response.setResultMessage(Constants.BUSI_SUCCESS_MESSAGE);
