@@ -20,9 +20,9 @@ import java.security.Principal;
 @RequestMapping("/login")
 public class LoginController {
 
-    private  static  final  String REST_URL_PREFIX="http://localhost:8002";
+//    private  static  final  String REST_URL_PREFIX="http://localhost:8002";
     //微服务访问
-//    private  static  final  String REST_URL_PREFIX="http://PA-SYSMANAGE-CENTER";
+    private  static  final  String REST_URL_PREFIX="http://PA-SYSMANAGE-CENTER";
 
     @Autowired
    private RestTemplate restTemplate ;
