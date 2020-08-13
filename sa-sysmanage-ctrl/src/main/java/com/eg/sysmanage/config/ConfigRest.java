@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 public class ConfigRest {
 
     @Bean
-//    @LoadBalanced // 客户端 负载均衡，增加这一个配置即可
+    @LoadBalanced // 客户端 负载均衡，增加这一个配置即可
     public RestTemplate restTemplate(){
         return  new RestTemplate();
     }
