@@ -1,0 +1,24 @@
+server:
+  port: 8099
+  servlet:
+    context-path: /sso
+spring:
+  application:
+    name: sa-sso-server
+  redis:
+    host: 121.196.18.208
+    port: 6379
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 500
+        min-idle: 0
+    lettuce:
+      shutdown-timeout: 5000
+
+
+
+
+
+
